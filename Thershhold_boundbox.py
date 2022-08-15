@@ -8,7 +8,7 @@ import cv2 as cv
 
 
 
-path = glob.glob('C:/Users/dell/Desktop/project/image_data/*.jpg')
+path = glob.glob('.../*.jpg')
 
 i= 0
 
@@ -37,9 +37,9 @@ for images in path:
 
         
     i +=1
-    cv2.imwrite("image_data/Results/Image-%i.jpg" %i,final_result)
-    # cv2.imwrite("image_data/Results/Image-%0i.jpg" %i,gray_img)
-    # cv2.imwrite("image_data/Results/Image-%0i.jpg" %i,binary_img)
+    cv2.imwrite(".../Image-%i.jpg" %i,final_result)
+    # cv2.imwrite(".../Image-%0i.jpg" %i,gray_img)
+    # cv2.imwrite(".../Image-%0i.jpg" %i,binary_img)
 
     
     cv2.imshow('Contour', final_result)
